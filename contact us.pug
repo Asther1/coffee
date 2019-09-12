@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="zh")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no")
+        title Fussen Coffee
+        link(rel="stylesheet", href="style.css")
+    body
+        div(id="fussen")
+            include nav.pug
+        form(action="#")
+            label(for="name") 姓名:
+            input(type="text" name="name" id="name" placeholder="請輸入您的姓名")
+            label(for="email") 信箱:
+            input(type="email" name="email" id="email" placeholder="請輸入您的信箱")
+            label(for="introduction") 自我介紹:
+            textarea(name="introduction", cols="30", rows="4")
+            div(id="button")
+                input(type="reset" value="重新輸入" class="btn")
+                input(type="Submit" value="確認送出" class="btn")
+        footer
+            nav
+                img(src="imgs/福森.png", alt="Fussen Coffee首頁" class="logo")
+                div(class="link")
+                    a(href="index.html") 首頁
+                    a(href="Meal goods.html") 餐點商品
+                    a(href="Branch information.html") 分店資訊
+                    a(href="contact us.html") 聯繫我們
+            div(id="copy") Copyright  &copy;  2019 Fussen coffee. All rights reserved
