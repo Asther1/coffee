@@ -356,11 +356,11 @@ form{
   }
   
   .owl-carousel .owl-prev {
-    left: -70px;
+    left: -45px;
   }
   
   .owl-carousel .owl-next {
-    right: -70px;
+    right: -45px;
   }
   .img-responsive{
       height: 250px;
@@ -777,7 +777,14 @@ div.card.show div.flap2 {
         width: 220px;
         height: 40px;
         margin-top: 10px;
-    
+    }
+      /* 餐店商品 */
+    .owl-carousel .owl-next {
+        right: 0px;
+    }
+    .owl-carousel .owl-prev{
+      left: 0px;
+    }
     }
 /* 當螢幕寬度小於等於 767 像素 - 手機 */
 @media screen and (max-width: 767px){
@@ -808,15 +815,13 @@ div.card.show div.flap2 {
       font-size: 12px;
   }
   /* 餐店商品 */
-  .owl-carousel .owl-next, .owl-carousel .owl-prev{
-      width: 0px;
-      height: 0px;
-      line-height: 0px;
-      border-radius: 0%;
-      position: none;
-      top: 0%;
-      font-size: 0px;
-      color: #faf7f0;
+  .owl-carousel .owl-next{
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .owl-carousel .owl-prev{
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 .owl-stage{
     width: 100%
@@ -829,4 +834,5 @@ input[type="reset"], input[type="Submit"]{
 
 form{
     width: 90%;
+}
 }
