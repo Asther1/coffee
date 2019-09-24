@@ -5,7 +5,12 @@
     height: 50px;
 
 }
-
+.logobottom img{
+  width: 200px;
+}
+.logobottom{
+  text-align: center;
+}
 .link{
     float: right;
     padding: 20px;
@@ -254,8 +259,8 @@ body {
 /* 聯絡我們 */
 form{
     width:60vw;
-    margin: 60px auto;
-    padding: 80px 80px;
+    margin: 20px auto;
+    padding: 20px 80px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
 
@@ -785,6 +790,11 @@ div.card.show div.flap2 {
     .owl-carousel .owl-prev{
       left: 0px;
     }
+        /* 聯絡我們 */
+        form {
+          width: 80vw;
+          margin: 100px auto;
+        }
     }
 /* 當螢幕寬度小於等於 767 像素 - 手機 */
 @media screen and (max-width: 767px){
@@ -834,5 +844,7 @@ input[type="reset"], input[type="Submit"]{
 
 form{
     width: 90%;
+    padding: 0px 20px;
+    margin: 30px auto;
 }
 }
