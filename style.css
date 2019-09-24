@@ -5,12 +5,6 @@
     height: 50px;
 
 }
-.logobottom img{
-  width: 200px;
-}
-.logobottom{
-  text-align: center;
-}
 .link{
     float: right;
     padding: 20px;
@@ -307,7 +301,7 @@ form{
     right: 0;
     width: 100%;
     height: 30%;
-    background-color: #faf7f0;
+    background-color: #ddd;
   }
   
   #customers-testimonials .item-details {
@@ -369,6 +363,10 @@ form{
   }
   .img-responsive{
       height: 250px;
+  }
+  /* 商品麵包屑 */
+  .breadcrumb{
+    background-color: #dce1df;
   }
 
   /* 商品頁面套餐 */
