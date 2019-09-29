@@ -1,12 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="zh">
 
 <head>
-    <meta charset="zh" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- 滾動css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Fussen Coffee</title>
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -49,141 +55,98 @@
             </ul>
         </div>
     </nav>
-
-    <!-- 套餐 -->
-    <div class="cards">
-        <div class="card">
-            <img class="card__image" src="https://source.unsplash.com/300x225/?field" alt="field" />
-            <div class="card-title">
-                <a href="#" class="toggle-info btn">
-                    <span class="left"></span>
-                    <span class="right"></span>
-                </a>
-                <h2>
-                    鐵鍋煎餅
-                </h2>
-            </div>
-            <div class="card-flap flap1">
-                <div class="card-flap flap2">
-                    <div class="card-actions">
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card__image" src="https://source.unsplash.com/300x225/?water" alt="water" />
-            <div class="card-title">
-                <a href="#" class="toggle-info btn">
-                    <span class="left"></span>
-                    <span class="right"></span>
-                </a>
-                <h2>
-                    午餐時間
-                </h2>
-            </div>
-            <div class="card-flap flap1">
-                <div class="card-flap flap2">
-                    <div class="card-actions">
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card__image" src="https://source.unsplash.com/300x225/?river" alt="river" />
-            <div class="card-title">
-                <a href="#" class="toggle-info btn">
-                    <span class="left"></span>
-                    <span class="right"></span>
-                </a>
-                <h2>
-                    全日經典早午餐
-                </h2>
-            </div>
-            <div class="card-flap flap1">
-                <div class="card-flap flap2">
-                    <div class="card-actions">
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card__image" src="https://source.unsplash.com/300x225/?kite" alt="kite" />
-            <div class="card-title">
-                <a href="#" class="toggle-info btn">
-                    <span class="left"></span>
-                    <span class="right"></span>
-                </a>
-                <h2>
-                   法式吐司麵包塔
-                </h2>
-            </div>
-            <div class="card-flap flap1">
-                <div class="card-flap flap2">
-                    <div class="card-actions">
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card__image" src="https://source.unsplash.com/300x225/?underwater" alt="underwater" />
-            <div class="card-title">
-                <a href="#" class="toggle-info btn">
-                    <span class="left"></span>
-                    <span class="right"></span>
-                </a>
-                <h2>
-                    准南霸手工漢堡
-                    <small>Image from unsplash.com</small>
-                </h2>
-            </div>
-            <div class="card-flap flap1">
-                <div class="card-description">
-                    This grid is an attempt to make something nice that works on touch devices. Ignoring hover states
-                    when they're not available etc.
-                </div>
-                <div class="card-flap flap2">
-                    <div class="card-actions">
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img class="card__image" src="https://source.unsplash.com/300x225/?desert" alt="desert" />
-            <div class="card-title">
-                <a href="#" class="toggle-info btn">
-                    <span class="left"></span>
-                    <span class="right"></span>
-                </a>
-                <h2>
-                    Card title
-                    <small>Image from unsplash.com</small>
-                </h2>
-            </div>
-            <div class="card-flap flap1">
-                <div class="card-description">
-                    This grid is an attempt to make something nice that works on touch devices. Ignoring hover states
-                    when they're not available etc.
-                </div>
-                <div class="card-flap flap2">
-                    <div class="card-actions">
-                        <a href="#" class="btn">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <!-- 麵包屑 -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item"><a href="Meal goods.html">餐點商品</a></li>
+            <li class="breadcrumb-item active" aria-current="page">套餐</li>
+        </ol>
+    </nav>
+    <!-- 產品 -->
+    <div class="flog">
+       <h1>套餐</h1>
     </div>
+    <!-- 滾動圖 -->
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="container">
 
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="customers-testimonials" class="owl-carousel">
+
+                        <!--TESTIMONIAL 1 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-responsive" src="imgs/package1.png" alt="">
+                                <div class="item-details">
+                                    <h5>鐵鍋煎餅炸脆雞<span>$220</span></h5>
+                                    <p>食材 : 自製燒肉，甜鮮蔬菜，生菜，自製煎餅，檸檬塊</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END OF TESTIMONIAL 1 -->
+                        <!--TESTIMONIAL 2 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-responsive" src="imgs/package2.png" alt="">
+                                <div class="item-details">
+                                    <h5>法式香頌早午餐<span>$260</span></h5>
+                                    <p>食材 : 法式吐司，帶骨香腸，培根，炒蛋，水果生菜沙拉</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END OF TESTIMONIAL 2 -->
+                        <!--TESTIMONIAL 3 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-responsive" src="imgs/package3.png" alt="">
+                                <div class="item-details">
+                                    <h5>烤雞腿炒菇拌飯<span>$260</span></h5>
+                                    <p>食材 : 現炒牛肉，香料飯，甜青椒，番茄，主廚濃湯，青花椰菜</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END OF TESTIMONIAL 3 -->
+                        <!--TESTIMONIAL 4 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-responsive" src="imgs/package4.png" alt="">
+                                <div class="item-details">
+                                    <h5>夏威夷培根牛肉堡<span>$260</span></h5>
+                                    <p>食材 : 自製手工牛肉加上起士，培根，鳳梨，生菜，酸黃瓜，新鮮番茄</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END OF TESTIMONIAL 4 -->
+                        <!--TESTIMONIAL 5 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-responsive" src="imgs/package5.png" alt="">
+                                <div class="item-details">
+                                    <h5>炒菇菇帕尼尼<span>$230</span></h5>
+                                    <p>食材 : 杏鮑菇，香菇，番茄，清甜蔬菜，洋蔥，切達，起士，莫扎里拉</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--TESTIMONIAL 6 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-responsive" src="imgs/package6.png" alt="">
+                                <div class="item-details">
+                                    <h5>煙熏牛肉法式麵包塔<span>$210</span></h5>
+                                    <p>食材 : 法式吐司，起士，蜂蜜芥末醬，黑胡椒牛肉，洋蔥</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END OF TESTIMONIAL 6 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END OF TESTIMONIALS -->
     <!-- 頁尾 -->
     <footer>
         <nav><img class="logo" src="imgs/福森.png" alt="Fussen Coffee首頁" />
@@ -203,55 +166,36 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <!-- 套餐 js -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!-- 滾動js -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
     <script>
-        $(document).ready(function () {
-            var zindex = 10;
-
-            $("div.card").click(function (e) {
-                e.preventDefault();
-
-                var isShowing = false;
-
-                if ($(this).hasClass("show")) {
-                    isShowing = true
-                }
-
-                if ($("div.cards").hasClass("showing")) {
-                    // a card is already in view
-                    $("div.card.show")
-                        .removeClass("show");
-
-                    if (isShowing) {
-                        // this card was showing - reset the grid
-                        $("div.cards")
-                            .removeClass("showing");
-                    } else {
-                        // this card isn't showing - get in with it
-                        $(this)
-                            .css({ zIndex: zindex })
-                            .addClass("show");
-
+        jQuery(document).ready(function ($) {
+            "use strict";
+            $('#customers-testimonials').owlCarousel({
+                loop: true,
+                center: true,
+                items: 3,
+                margin: 30,
+                autoplay: true,
+                dots: true,
+                nav: true,
+                autoplayTimeout: 8500,
+                smartSpeed: 450,
+                navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1170: {
+                        items: 3
                     }
-
-                    zindex++;
-
-                } else {
-                    // no cards in view
-                    $("div.cards")
-                        .addClass("showing");
-                    $(this)
-                        .css({ zIndex: zindex })
-                        .addClass("show");
-
-                    zindex++;
                 }
-
             });
-        });
-    </script>
+        });</script>
 </body>
 
 </html>

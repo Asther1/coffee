@@ -14,42 +14,178 @@
 <body>
   <!-- 導覽列 -->
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
-      <a class="navbar-brand" href="index.html">Fussen Coffee</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
+    <a class="navbar-brand" href="index.html">Fussen Coffee</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                  <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="Meal goods.html" id="navbarDropdown" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      餐點商品
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="sandwich.html">三明治&沙拉</a>
-                      <a class="dropdown-item" href="island.html">茶</a>
-                      <a class="dropdown-item" href="dessert.html">點心</a>
-                      <a class="dropdown-item" href="coffee.html">咖啡</a>
-                      <a class="dropdown-item" href="tea.html">飲品</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="package.html">套餐</a>
-                  </div>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="Branch information.html">分店資訊</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="contact us.html">聯絡我們</a>
-              </li>
-          </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Meal goods.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            餐點商品
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="sandwich.html">三明治&沙拉</a>
+            <a class="dropdown-item" href="island.html">茶</a>
+            <a class="dropdown-item" href="dessert.html">點心</a>
+            <a class="dropdown-item" href="coffee.html">咖啡</a>
+            <a class="dropdown-item" href="tea.html">飲品</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="package.html">套餐</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Branch information.html">分店資訊</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact us.html">聯絡我們</a>
+        </li>
+      </ul>
+    </div>
   </nav>
+  <!-- 麵包屑 -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+      <li class="breadcrumb-item active" aria-current="page">餐點商品</li>
+    </ol>
+  </nav>
+  <!-- 頁面 -->
+  <div class="cards">
 
+    <div class="card">
+      <img class="card__img-responsive" src="imgs/Asther1.jpg" alt="wave" />
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          套餐
+          <small>飽足的最佳選擇</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="package.html" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card__img-responsive" src="imgs/Asther3.jpg" alt="beach" />
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          三明治&沙拉
+          <small>減肥的最佳選擇</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="sandwich.html" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card__img-responsive" src="imgs/Asther3.jpg" alt="mountain" />
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          茶
+          <small>午後的最佳選擇</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="island.html" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card__img-responsive" src="imgs/Asther4.jpg" alt="field" />
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          點心
+          <small>下午茶的最好搭配</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="dessert.html" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card__img-responsive" src="imgs/Asther5.jpg" alt="water" />
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          咖啡
+          <small>上班的一杯，清爽無比</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="coffee.html" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card__img-responsive" src="imgs/Asther6.jpg" alt="river" />
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          飲品
+          <small>最刺激的口感</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="tea.html" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 
   <!-- 頁尾 -->
@@ -71,6 +207,55 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <!-- 頁面js -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  <script>$(document).ready(function () {
+      var zindex = 10;
+
+      $("div.card").click(function (e) {
+        e.preventDefault();
+
+        var isShowing = false;
+
+        if ($(this).hasClass("show")) {
+          isShowing = true
+        }
+
+        if ($("div.cards").hasClass("showing")) {
+          // a card is already in view
+          $("div.card.show")
+            .removeClass("show");
+
+          if (isShowing) {
+            // this card was showing - reset the grid
+            $("div.cards")
+              .removeClass("showing");
+          } else {
+            // this card isn't showing - get in with it
+            $(this)
+              .css({ zIndex: zindex })
+              .addClass("show");
+
+          }
+
+          zindex++;
+
+        } else {
+          // no cards in view
+          $("div.cards")
+            .addClass("showing");
+          $(this)
+            .css({ zIndex: zindex })
+            .addClass("show");
+
+          zindex++;
+        }
+
+      });
+    });</script>
 </body>
 
 </html>
