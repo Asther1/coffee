@@ -271,7 +271,7 @@ form{
     outline-style: none;
   }
 
-  input[type="text"], input[type="email"],textarea{
+  fieldset,input[type="text"], input[type="email"],textarea{
     background-color: #afafaf;
     border: 2px  solid white;
      box-sizing: border-box;
@@ -439,14 +439,14 @@ form{
             transform: translateY(-2px);
     transition: all 0.25s 0s ease-out;
   }
-  .no-touch a.btn:active,
+  /* .no-touch a.btn:active,
   a.btn:active {
     background: #008a93;
     box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
     -webkit-transform: translate3d(0, 1px, 0);
             transform: translate3d(0, 1px, 0);
     transition: all 0.025s 0s ease-out;
-  }
+  } */
   div.cards {
     margin: 0px auto;
     max-width: 960px;
@@ -639,14 +639,14 @@ a.btn {
           transform: translateY(-2px);
   transition: all 0.25s 0s ease-out;
 }
-.no-touch a.btn:active,
+/* .no-touch a.btn:active,
 a.btn:active {
   background: #008a93;
   box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.25);
   -webkit-transform: translate3d(0, 1px, 0);
           transform: translate3d(0, 1px, 0);
   transition: all 0.025s 0s ease-out;
-}
+} */
 div.card {
   background: #ffffff;
   display: inline-block;
@@ -775,7 +775,43 @@ div.card.show div.flap1 {
 div.card.show div.flap2 {
   transition: all 0.3s 0.2s ease-out;
 }
+/* 分店 */
+.Branch-box{
+  text-align: center;
+  margin: 0px auto;
+  width: 80vw;
+}
 
+.Branch-box p{
+  margin-bottom: 20px;
+}
+
+.Branch-box iframe{
+  margin: 20px 0;
+  width:60vw;
+  height: 30vw;
+}
+
+.Branch-box img{
+  width: 40%;
+  margin:0 70px 20px 0;; 
+}
+.shop-box{
+  text-align: left;
+  width: 300px;
+  padding: 10px 10px;
+  display: inline-block;
+  vertical-align: bottom  ;
+}
+
+.shop-box h1{
+  font-size: 25px;
+}
+
+.shop-box h2{
+  text-align: right;
+  font-size: 15px;
+}
 /* RWD */
 /* 當螢幕寬度小於等於 1023 像素 - 平板 */
 @media screen and (max-width: 1023px) {
@@ -791,18 +827,33 @@ div.card.show div.flap2 {
       margin: 0 0px;
     }
       /* 餐店商品 */
-    .owl-carousel .owl-next {
+      .owl-carousel .owl-next{
         right: 0px;
-    }
-    .owl-carousel .owl-prev{
-      left: 0px;
-    }
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .owl-carousel .owl-prev{
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .testimonials{
+        margin-top: 50px;
+      }
         /* 聯絡我們 */
         form {
           width: 80vw;
-          margin: 100px auto;
+          margin: 130px auto;
         }
+    /* 分店資訊 */
+    .shop-box h1{
+      font-size: 20px;
     }
+    .Branch-box img {
+      margin: 0 0px 20px 0;
+    }
+    .Branch-box iframe {
+      width: 75vw;
+  }
+  }
 /* 當螢幕寬度小於等於 767 像素 - 手機 */
 @media screen and (max-width: 767px){
     /* 導覽 */
@@ -853,5 +904,26 @@ form{
     width: 90%;
     padding: 0px 20px;
     margin: 30px auto;
+}
+footer{
+  position: relative;}
+/* 分店 */
+
+.shopbox{
+  font-size: 30px;
+}
+.shop-box{
+  margin-top: 20px;
+}
+
+.Branch-box img{
+  width: 100%;
+  margin:0 0; 
+}
+.Branch-box iframe{
+  margin: 0 0;
+  width:100%;
+  height: 70vw;
+}
 }
 }
